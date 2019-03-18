@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arduino.led.arduino.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnConectar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Conectar" />
+
+        <Button
+            android:id="@+id/btnLed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnLed1"
+            android:layout_alignBottom="@+id/btnLed1"
+            android:layout_alignEnd="@+id/txtSaida"
+            android:layout_alignRight="@+id/txtSaida"
+            android:text="Ligar" />
+
+
+        <Button
+            android:id="@+id/btnLed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtSaida"
+            android:layout_alignStart="@+id/txtSaida"
+            android:layout_below="@+id/txtSaida"
+            android:layout_marginTop="43dp"
+            android:text="Ligar" />
+
+
+        <Button
+            android:id="@+id/btnLed3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnLed1"
+            android:layout_alignStart="@+id/btnLed1"
+            android:layout_below="@+id/btnLed1"
+            android:layout_marginTop="26dp"
+            android:text="Ligar" />
+
+        <Button
+            android:id="@+id/btnLed4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnLed3"
+            android:layout_alignBottom="@+id/btnLed3"
+            android:layout_alignLeft="@+id/btnLed2"
+            android:layout_alignStart="@+id/btnLed2"
+            android:text="Ligar" />
+
+        <Button
+            android:id="@+id/btnLed5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnLed3"
+            android:layout_alignStart="@+id/btnLed3"
+            android:layout_below="@+id/btnLed3"
+            android:layout_marginTop="27dp"
+            android:text="Ligar" />
+
+        <Button
+            android:id="@+id/btnLed6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnLed5"
+            android:layout_alignBottom="@+id/btnLed5"
+            android:layout_alignLeft="@+id/btnLed4"
+            android:layout_alignStart="@+id/btnLed4"
+            android:text="Ligar" />
+
+        <Button
+            android:id="@+id/btnLed7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnLed5"
+            android:layout_alignStart="@+id/btnLed5"
+            android:layout_below="@+id/btnLed5"
+            android:layout_marginTop="30dp"
+            android:text="Ligar" />
+
+        <Button
+            android:id="@+id/btnLed8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnLed7"
+            android:layout_alignBottom="@+id/btnLed7"
+            android:layout_alignLeft="@+id/btnLed6"
+            android:layout_alignStart="@+id/btnLed6"
+            android:text="Ligar" />
+
+        <EditText
+            android:id="@+id/txtSaida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSaida"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textSaida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnConectar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="Status dos pinos de saída" />
+
+        <Button
+            android:id="@+id/btnApagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnLed8"
+            android:layout_alignLeft="@+id/btnLed7"
+            android:layout_alignRight="@+id/btnLed7"
+            android:layout_alignStart="@+id/btnLed7"
+            android:layout_below="@+id/btnLed8"
+            android:layout_marginTop="57dp"
+            android:text="Apagar tudo" />
+
+        <Button
+            android:id="@+id/btnAlarme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnApagar"
+            android:layout_alignLeft="@+id/btnSequencial1"
+            android:layout_alignRight="@+id/btnApagar"
+            android:layout_alignStart="@+id/btnSequencial1"
+            android:layout_below="@+id/btnApagar"
+            android:layout_marginTop="21dp"
+            android:text="Função Alarme - Ativar" />
+
+        <Button
+            android:id="@+id/btnSequencial1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnApagar"
+            android:layout_alignLeft="@+id/btnApagar"
+            android:layout_alignRight="@+id/btnApagar"
+            android:layout_alignStart="@+id/btnApagar"
+            android:layout_below="@+id/btnAlarme"
+            android:layout_marginTop="23dp"
+            android:text="Sequencial 01" />
+
+        <Button
+            android:id="@+id/btnSequencial2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnSequencial1"
+            android:layout_alignLeft="@+id/btnSequencial1"
+            android:layout_alignRight="@+id/btnSequencial1"
+            android:layout_alignStart="@+id/btnSequencial1"
+            android:layout_below="@+id/btnSequencial1"
+            android:layout_marginTop="18dp"
+            android:text="Sequencial 02" />
+
+        <TextView
+            android:id="@+id/textLed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLed2"
+            android:layout_alignLeft="@+id/btnLed1"
+            android:layout_alignStart="@+id/btnLed1"
+            android:text="Dispositivo 1" />
+
+        <TextView
+            android:id="@+id/textLed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLed2"
+            android:layout_alignLeft="@+id/btnLed2"
+            android:layout_alignStart="@+id/btnLed2"
+            android:text="Dispositivo 2" />
+
+        <TextView
+            android:id="@+id/textLed3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLed4"
+            android:layout_alignLeft="@+id/btnLed3"
+            android:layout_alignStart="@+id/btnLed3"
+            android:text="Dispositivo 3" />
+
+        <TextView
+            android:id="@+id/textLed4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLed4"
+            android:layout_alignLeft="@+id/btnLed4"
+            android:layout_alignStart="@+id/btnLed4"
+            android:text="Dispositivo 4" />
+
+        <TextView
+            android:id="@+id/textLed5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLed6"
+            android:layout_alignLeft="@+id/btnLed5"
+            android:layout_alignStart="@+id/btnLed5"
+            android:text="Dispositivo 5" />
+
+        <TextView
+            android:id="@+id/textLed6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLed6"
+            android:layout_alignLeft="@+id/btnLed6"
+            android:layout_alignStart="@+id/btnLed6"
+            android:text="Dispositivo 6" />
+
+        <TextView
+            android:id="@+id/textLed7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLed8"
+            android:layout_alignLeft="@+id/btnLed7"
+            android:layout_alignStart="@+id/btnLed7"
+            android:text="Dispositivo 7" />
+
+        <TextView
+            android:id="@+id/textLed8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLed8"
+            android:layout_alignLeft="@+id/btnLed8"
+            android:layout_alignStart="@+id/btnLed8"
+            android:text="Dispositivo 8" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
